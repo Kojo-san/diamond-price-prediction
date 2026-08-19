@@ -15,11 +15,6 @@ feature engineering, visualisation et comparaison de 6 modèles de régression
 |---|---|
 | ![Boxplot](images/price_by_cut_boxplot.png) | ![Benchmark modèles](images/model_comparison_rmse.png) |
 
-> **Note** : sur le boxplot, les diamants de coupe "Ideal" ont un prix médian plus
-> **bas** que les coupes "Fair" ou "Premium" — pas parce qu'une meilleure coupe fait
-> baisser le prix, mais parce que le carat (facteur dominant du prix) et la qualité
-> de coupe sont corrélés négativement dans ce jeu de données : un effet de confusion
-> classique en science des données.
 
 ## Résultats : comparaison des modèles
 
@@ -35,7 +30,7 @@ RMSE (racine de l'erreur quadratique moyenne) sur le prix en échelle logarithmi
 | Ensachage (Bagging) | 0.057 | 0.115 |
 | MLPRegressor | 0.111 | 0.115 |
 
-La forêt aléatoire (Random Forest) obtient la meilleure performance en test, suivie
+Random Forest obtient la meilleure performance en test, suivie
 de près par le Gradient Boosting, l'ensachage et le réseau de neurones. Le modèle
 linéaire (Ridge) sous-performe nettement, signe que la relation entre les
 caractéristiques et le prix n'est pas purement linéaire.
@@ -88,8 +83,8 @@ Jeu de données [Diamonds](https://www.kaggle.com/datasets/shivam2503/diamonds) 
 
 ## Contexte
 
-Projet réalisé dans le cadre du cours INF0102 (Introduction à la programmation
-pour l'ingénieur) — École Polytechnique de Montréal, portant sur la manipulation
+Projet réalisé à Polytechnique de Montréal dans le cadre du cours INF0102 (Introduction à la programmation
+pour l'ingénieur), portant sur la manipulation
 de données structurées avec `pandas` et l'entraînement de modèles de régression
 avec `scikit-learn`.
 
